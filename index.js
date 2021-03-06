@@ -34,11 +34,9 @@ app.get("/", (req, res) => {
         timestamp,
         range,
         strategy,
-        timeElapsed:
-          process.hrtime(timer)[0] +
-          " s, " +
-          (process.hrtime(timer)[1] / 1000000).toFixed(3) +
-          " ms",
+        timeElapsed: `${process.hrtime(timer)[0]} s, ${(
+          process.hrtime(timer)[1] / 1000000
+        ).toFixed(3)} ms`,
         numberOfPrimes: result.length,
       });
       respond(result, res);
@@ -49,11 +47,9 @@ app.get("/", (req, res) => {
         timestamp,
         range,
         strategy,
-        timeElapsed:
-          process.hrtime(timer)[0] +
-          " s, " +
-          (process.hrtime(timer)[1] / 1000000).toFixed(3) +
-          " ms",
+        timeElapsed: `${process.hrtime(timer)[0]} s, ${(
+          process.hrtime(timer)[1] / 1000000
+        ).toFixed(3)} ms`,
         numberOfPrimes: result.length,
       });
       respond(result, res);
@@ -64,11 +60,9 @@ app.get("/", (req, res) => {
         timestamp,
         range,
         strategy,
-        timeElapsed:
-          process.hrtime(timer)[0] +
-          " s, " +
-          (process.hrtime(timer)[1] / 1000000).toFixed(3) +
-          " ms",
+        timeElapsed: `${process.hrtime(timer)[0]} s, ${(
+          process.hrtime(timer)[1] / 1000000
+        ).toFixed(3)} ms`,
         numberOfPrimes: result.length,
       });
       respond(result, res);
@@ -78,11 +72,9 @@ app.get("/", (req, res) => {
         timestamp,
         range,
         strategy,
-        timeElapsed:
-          process.hrtime(timer)[0] +
-          " s, " +
-          (process.hrtime(timer)[1] / 1000000).toFixed(3) +
-          " ms",
+        timeElapsed: `${process.hrtime(timer)[0]} s, ${(
+          process.hrtime(timer)[1] / 1000000
+        ).toFixed(3)} ms`,
         numberOfPrimes: 0,
       });
       respond("Invalid strategy", res);
