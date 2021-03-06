@@ -11,6 +11,6 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "simple-prime-generator": "^1.0.10"
+    "simple-prime-generator": "^1.1.0"
   }
 }
