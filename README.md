@@ -10,7 +10,7 @@ yarn start
 
 ## Sample Requests
 
-GET http://localhost:8080
+### GET http://localhost:8080
 
 req.body -
 ```javascript
@@ -29,7 +29,7 @@ res.body -
 ]
 ```
 
-GET http://localhost:8080/history
+### GET http://localhost:8080/history
 
 res.body -
 ```javascript
