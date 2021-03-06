@@ -83,7 +83,7 @@ app.get("/", (req, res) => {
           " s, " +
           (process.hrtime(timer)[1] / 1000000).toFixed(3) +
           " ms",
-        numberOfPrimes: result.length,
+        numberOfPrimes: 0,
       });
       respond("Invalid strategy", res);
   }
