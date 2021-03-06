@@ -334,10 +334,10 @@ setprototypeof@1.1.1:
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.1.1.tgz#7e95acb24aa92f5885e0abef5ba131330d4ae683"
   integrity sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEbHMOxEZ1lqVRYP2OAw==
 
-simple-prime-generator@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/simple-prime-generator/-/simple-prime-generator-1.0.7.tgz#d4b14c6f459dbf465d6fe8ba681260ec7e773519"
-  integrity sha512-Qw2gYtwS6pH4UYxiKE3Qpw1Oy5TNXdPh3BVd6hP0Q8xJVhDzZTRBQ1gQLjB6bPhGOZE6fQjnkouqP3eCuvdcAw==
+simple-prime-generator@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/simple-prime-generator/-/simple-prime-generator-1.0.9.tgz#7076e15cc598d5f2bbde04d16dda9300b8c80f92"
+  integrity sha512-SUrVz4dr5HXt0P8VFw5kz33RMoye08z73SbylAC7ORE3shRx5bcEvl+E1RRiVcYEVqFURNICBa1UZfLWgKUvUQ==
 
 "statuses@>= 1.5.0 < 2", statuses@~1.5.0:
   version "1.5.0"
