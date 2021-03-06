@@ -7,38 +7,31 @@ const {
 
 const express = require("express");
 const bodyParser = require("body-parser");
+const { respond, validate } = require("./src/util");
 
 const app = express();
 const port = 8080;
 
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-    if(!Number.isInteger(req.body.start) || !Number.isInteger(req.body.end)){
-        res.send("Invalid start and/or end");
-        return;
-    }
-    if(!req.body.strategy){
-        res.send("Strategy required");
-        return;
-    }
+  validate(req, res);
 
-    switch(req.body.strategy){
-        case 'best':
-            res.send(sieveOfEratosthenes(req.body.start, req.body.end));
-            return;
-        case 'opt':
-            res.send(getPrimes(req.body.start, req.body.end, isPrimeOptimized));
-            return;
-        case 'naive':
-            res.send(getPrimes(req.body.start, req.body.end, isPrimeNaive));
-            return;
-        default:
-            res.send("Invalid strategy");
-            return;
-    }
+  switch (req.body.strategy) {
+    case "best":
+      respond(sieveOfEratosthenes(req.body.start, req.body.end), res);
+      break;
+    case "opt":
+      respond(getPrimes(req.body.start, req.body.end, isPrimeOptimized), res);
+      break;
+    case "naive":
+      respond(getPrimes(req.body.start, req.body.end, isPrimeNaive), res);
+      break;
+    default:
+      respond("Invalid strategy", res);
+  }
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Server listening at http://localhost:${port}`);
 });
