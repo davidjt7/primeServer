@@ -1,14 +1,13 @@
 const respond = (message, res) => {
   res.send(message);
-  return;
 };
 
 const validate = (req, res) => {
   if (!Number.isInteger(req.body.start) || !Number.isInteger(req.body.end)) {
-    respond("Invalid start and/or end", res);
+    respond('Invalid start and/or end', res);
   }
   if (!req.body.strategy) {
-    respond("Strategy required", res);
+    respond('Strategy required', res);
   }
 };
 
